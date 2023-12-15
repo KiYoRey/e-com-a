@@ -9,6 +9,4 @@ export const routes: Routes = [
     {path:"carts", component:CartComponent},
     {path:"**", redirectTo:"products", pathMatch:'full'}
 
-
-
 ];
