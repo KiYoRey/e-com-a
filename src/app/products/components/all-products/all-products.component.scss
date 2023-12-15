@@ -9,6 +9,7 @@ body {
   .card {
     width: 350px;
     height: 370px;
+    background-color: rgb(244, 233, 230);
   }
   
   .image {
@@ -19,7 +20,7 @@ body {
   
   .main-heading {
     font-size: 40px;
-    color: red !important;
+    color: rgb(194, 7, 7) !important;
   }
   
   .ratings i {
@@ -63,5 +64,10 @@ body {
   .btn-danger {
     height: 48px;
     font-size: 18px;
+    background-color: #8b0000;
+    color: #ffd700;
+  }
+  p{
+    font-size: small;
   }
   
