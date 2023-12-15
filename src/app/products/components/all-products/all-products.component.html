@@ -1,10 +1,12 @@
 <div class="my-2 w-25">
+    
     <label for="" class="my-1">categories</label>
     <select class="form-control">
-        <option value="1">opp1</option>
-        <option value="2">opp1</option>
-        <option value="3">opp1</option>
+@for(option of item ; track option.id){
+
+        <option value="{{option}}">{{option}}</option>}
     </select>
+
 </div>
 @for(post of item ; track post.id){
 <div class="height d-flex align-items-center">
