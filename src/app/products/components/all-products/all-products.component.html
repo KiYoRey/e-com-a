@@ -2,13 +2,13 @@
     
     <label for="" class="my-1">categories</label>
     <select class="form-control">
-@for(option of item ; track option.id){
+@for(option of category ; track option.id){
 
         <option value="{{option}}">{{option}}</option>}
     </select>
 
 </div>
-@for(post of item ; track post.id){
+@for(post of product ; track post.id){
 <div class="height d-flex align-items-center">
  
     <div class="card mt-0">

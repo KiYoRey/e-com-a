@@ -15,7 +15,8 @@ export class AllProductsComponent implements OnInit {
   httpClient = inject(HttpClient);
 
   
-  item: any =[];
+  product: any =[];
+  category: any= [];
 
 
   ngOnInit(): void {
@@ -23,9 +24,9 @@ export class AllProductsComponent implements OnInit {
     this.getCategori();
   }
   getALLProducts(){
-    this.httpClient.get('https://fakestoreapi.com/products').subscribe((item: any) =>{
-      // console.log(item);
-      this.item = item;
+    this.httpClient.get('https://fakestoreapi.com/products').subscribe((data: any) =>{
+      console.log(data);
+      this.product = data;
     }, error => {
       alert("error")
       // console.log(error.message);
@@ -36,7 +37,7 @@ export class AllProductsComponent implements OnInit {
   getCategori(){
     this.httpClient.get('https://fakestoreapi.com/products/categories').subscribe((cat: any) =>{
       console.log(cat);  
-    this.item =cat;
+    this.category =cat;
       
     })
   }
