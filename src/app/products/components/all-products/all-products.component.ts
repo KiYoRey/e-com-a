@@ -25,7 +25,7 @@ export class AllProductsComponent implements OnInit {
   }
   getALLProducts(){
     this.httpClient.get('https://fakestoreapi.com/products').subscribe((data: any) =>{
-      console.log(data);
+      // console.log(data);
       this.product = data;
     }, error => {
       alert("error")
@@ -36,9 +36,11 @@ export class AllProductsComponent implements OnInit {
 
   getCategori(){
     this.httpClient.get('https://fakestoreapi.com/products/categories').subscribe((cat: any) =>{
-      console.log(cat);  
+      // console.log(cat);  
     this.category =cat;
       
+    },error=>{
+      alert("error")
     })
   }
 
