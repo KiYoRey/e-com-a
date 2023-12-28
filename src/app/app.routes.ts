@@ -7,6 +7,6 @@ export const routes: Routes = [
     {path:"products", component:AllProductsComponent},
     {path:"det", component:ProductsDetailsComponent},
     {path:"carts", component:CartComponent},
-    {path:"**", redirectTo:"products", pathMatch:'full'}
+    {path:"**", redirectTo:"carts", pathMatch:'full'}
 
 ];
