@@ -55,7 +55,23 @@
       
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         @for(post of productlist; track post.id){
-                <app-product-item></app-product-item>
+                <!-- <app-product-item [productItem]=""></app-product-item> -->
+
+                <!-- fix this after knowing how to bine data from parent to child -->
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="assets\images\bloody.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">{{post.name}}</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">add to cart</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">view more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         }
       </div>
     </div>

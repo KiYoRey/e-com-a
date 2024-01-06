@@ -10,7 +10,9 @@ export class CartsService {
     {id: 1, name:"samira" , description: "jkkjnkjkj"},
     {id: 2, name:"israe" , description: "jkkjnkjkj"},
     {id: 3, name:"fstimszahra" , description: "jkkjnkjkj"},
-    {id: 4, name:"fstimszahra" , description: "jkkjnkjkj"},
+    {id: 4, name:"laila" , description: "jkkjnkjkj"},
+    {id: 5, name:"kadija" , description: "jkkjnkjkj"},
+
 
 
 

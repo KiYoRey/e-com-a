@@ -3,6 +3,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 
 import { CartsService } from '../../services/carts.service';
 import { Product } from '../../../models/product';
+// import { MessengerService } from '../../services/messenger.service';
 
 @Component({
   selector: 'app-product-list',
@@ -16,6 +17,7 @@ export class ProductListComponent {
   productlist: Product[] = []
 
   constructor( private cartservice:CartsService){}
+ 
 
   ngOnInit():void{
     // console.log(this.cartservice.getProduct())

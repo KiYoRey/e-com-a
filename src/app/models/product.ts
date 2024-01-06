@@ -1,4 +1,4 @@
-import { Url } from "node:url";
+// import { Url } from "node:url";
 
 export class Product {
     public id: number;
@@ -6,7 +6,7 @@ export class Product {
     public description: string;
     // public image: Url;
 
-    constructor(id: number, name: string, description: string, image: Url){
+    constructor(id: number, name: string, description: string){
         this.id =id;
         this.name =name;
         this.description=description;

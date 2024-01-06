@@ -9,5 +9,16 @@ import { CartItemComponent } from './cart-item/cart-item.component';
   styleUrl: './carts.component.scss'
 })
 export class CartsComponent {
+  cartItem=[
+    {id:1, name:"kkk", price:500},
+    {id:2, name:"lll", price:500},
+    {id:3, name:"mmm", price:500},
+
+  ]
+
+  constructor(){}
+  ngOnInit(){
+    
+  }
 
 }
